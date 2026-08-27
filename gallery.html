@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cake Gallery — Whisk & Wonder</title>
+<meta name="description" content="Browse custom cakes by occasion — birthdays, weddings, baby showers, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark">🎂</span> Whisk & Wonder</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="order.html">Custom Order</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta-mobile"><a href="order.html" class="btn btn-primary btn-block">Order Now</a></li>
+    </ul>
+    <div class="nav-cta"><a href="order.html" class="btn btn-primary">Order Your Cake</a></div>
+  </div>
+</nav>
+
+<header class="page-hero bg-violet" style="color:#fff;">
+  <div class="container reveal">
+    <span class="eyebrow" style="background:#fff; color:var(--choc);">The gallery</span>
+    <h1>Cakes for every kind of celebration</h1>
+    <p style="opacity:0.95;">Tap any cake for details, flavors, and starting price. Everything here is fully customizable.</p>
+  </div>
+  <svg class="frosting-divider" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,40 C120,80 240,0 360,40 C480,80 600,0 720,40 C840,80 960,0 1080,40 C1200,80 1320,0 1440,40 L1440,80 L0,80 Z" fill="#FFF8EE"></path>
+  </svg>
+</header>
+
+<section style="padding-top:50px;">
+  <div class="container">
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">✨ All</button>
+      <button class="filter-btn" data-filter="birthday">🎈 Birthday</button>
+      <button class="filter-btn" data-filter="wedding">💍 Wedding</button>
+      <button class="filter-btn" data-filter="baby">🍼 Baby Shower</button>
+      <button class="filter-btn" data-filter="cupcake">🧁 Cupcakes</button>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item reveal" data-category="birthday" data-emoji="🌈" data-image="https://images.unsplash.com/photo-1574043436847-6e18093727c1?auto=format&fit=crop&w=900&q=80" data-title="Rainbow Surprise" data-desc="Six vibrant sponge layers with vanilla buttercream, revealed with the first slice. A birthday showstopper." data-price="From $110">
+        <div class="gallery-thumb"><img src="https://images.unsplash.com/photo-1574043436847-6e18093727c1?auto=format&fit=crop&w=700&q=80" alt="Rainbow Surprise cake with colorful sponge layers" loading="lazy" width="700" height="500"></div>
+        <div class="gallery-info"><span class="tag">Birthday</span><h3>Rainbow Surprise</h3><p class="gallery-price">From $110</p></div>
+      </div>
+
+      <div class="gallery-item reveal delay-1" data-category="wedding" data-emoji="🤍" data-image="https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?auto=format&fit=crop&w=900&q=80" data-title="Ivory Bloom Tier" data-desc="Three-tier elegant wedding cake with hand-piped sugar florals and a delicate lace pattern." data-price="From $340">
+        <div class="gallery-thumb"><img src="https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?auto=format&fit=crop&w=700&q=80" alt="Ivory Bloom Tier, a round white floral four-tiered wedding cake" loading="lazy" width="700" height="500"></div>
+        <div class="gallery-info"><span class="tag">Wedding</span><h3>Ivory Bloom Tier</h3><p class="gallery-price">From $340</p></div>
+      </div>
+
+      <div class="gallery-item reveal delay-2" data-category="baby" data-emoji="🍼" data-image="https://images.unsplash.com/photo-1627013817723-3bbb5166cc50?auto=format&fit=crop&w=900&q=80" data-title="Little Cloud Shower" data-desc="Soft pastel drip cake with fondant clouds and stars — perfect for a baby shower centerpiece." data-price="From $95">
+        <div class="gallery-thumb"><img src="https://images.unsplash.com/photo-1627013817723-3bbb5166cc50?auto=format&fit=crop&w=700&q=80" alt="Little Cloud Shower, a soft blue and white baby shower cake" loading="lazy" width="700" height="500"></div>
+        <div class="gallery-info"><span class="tag">Baby Shower</span><h3>Little Cloud Shower</h3><p class="gallery-price">From $95</p></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="cupcake" data-emoji="🧁" data-image="https://images.unsplash.com/photo-1457296795659-6f458be7a874?auto=format&fit=crop&w=900&q=80" data-title="Confetti Cupcake Tower" data-desc="24 mini confetti cupcakes with swirled buttercream, arranged on a tiered stand." data-price="From $60">
+        <div class="gallery-thumb"><img src="https://images.unsplash.com/photo-1457296795659-6f458be7a874?auto=format&fit=crop&w=700&q=80" alt="Confetti Cupcake Tower, tiered cupcakes with swirled buttercream" loading="lazy" width="700" height="500"></div>
+        <div class="gallery-info"><span class="tag">Cupcakes</span><h3>Confetti Cupcake Tower</h3><p class="gallery-price">From $60</p></div>
+      </div>
+
+      <div class="gallery-item reveal delay-1" data-category="birthday" data-emoji="🦖" data-image="https://images.unsplash.com/photo-1771832961525-45fd28ae51be?auto=format&fit=crop&w=900&q=80" data-title="Dino Adventure Cake" data-desc="Chocolate mud cake with edible 'jungle' landscape and hand-sculpted fondant dinosaurs." data-price="From $105">
+        <div class="gallery-thumb"><img src="https://images.unsplash.com/photo-1771832961525-45fd28ae51be?auto=format&fit=crop&w=700&q=80" alt="Dino Adventure Cake, a jungle-themed birthday cake with animal decorations" loading="lazy" width="700" height="500"></div>
+        <div class="gallery-info"><span class="tag">Birthday</span><h3>Dino Adventure Cake</h3><p class="gallery-price">From $105</p></div>
+      </div>
+
+      <div class="gallery-item reveal delay-2" data-category="wedding" data-emoji="🍫" data-image="https://images.unsplash.com/photo-1555050338-0abc773f7978?auto=format&fit=crop&w=900&q=80" data-title="Golden Drip Duo" data-desc="Two-tier dark chocolate cake with a gold-dusted caramel drip and fresh berries." data-price="From $220">
+        <div class="gallery-thumb"><img src="https://images.unsplash.com/photo-1555050338-0abc773f7978?auto=format&fit=crop&w=700&q=80" alt="Golden Drip Duo, a round dark chocolate coated cake" loading="lazy" width="700" height="500"></div>
+        <div class="gallery-info"><span class="tag">Wedding</span><h3>Golden Drip Duo</h3><p class="gallery-price">From $220</p></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="baby" data-emoji="🐻" data-image="https://images.unsplash.com/photo-1613140952277-1c6bd0386ff5?auto=format&fit=crop&w=900&q=80" data-title="Teddy Bear Picnic" data-desc="Vanilla sponge with a hand-sculpted fondant teddy bear and pastel bunting flags." data-price="From $100">
+        <div class="gallery-thumb"><img src="https://images.unsplash.com/photo-1613140952277-1c6bd0386ff5?auto=format&fit=crop&w=700&q=80" alt="Teddy Bear Picnic, a soft white and pink cake with a floral accent" loading="lazy" width="700" height="500"></div>
+        <div class="gallery-info"><span class="tag">Baby Shower</span><h3>Teddy Bear Picnic</h3><p class="gallery-price">From $100</p></div>
+      </div>
+
+      <div class="gallery-item reveal delay-1" data-category="cupcake" data-emoji="🍓" data-image="https://images.unsplash.com/photo-1586985290301-8db40143d525?auto=format&fit=crop&w=900&q=80" data-title="Berry Bliss Cupcakes" data-desc="12 lemon cupcakes topped with fresh strawberry buttercream and a berry drizzle." data-price="From $38">
+        <div class="gallery-thumb"><img src="https://images.unsplash.com/photo-1586985290301-8db40143d525?auto=format&fit=crop&w=700&q=80" alt="Berry Bliss Cupcakes with pink berry buttercream icing" loading="lazy" width="700" height="500"></div>
+        <div class="gallery-info"><span class="tag">Cupcakes</span><h3>Berry Bliss Cupcakes</h3><p class="gallery-price">From $38</p></div>
+      </div>
+
+      <div class="gallery-item reveal delay-2" data-category="birthday" data-emoji="🚀" data-image="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80" data-title="Galaxy Blast Cake" data-desc="Marble sponge with a hand-painted galaxy buttercream finish and edible star sprinkles." data-price="From $115">
+        <div class="gallery-thumb"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=700&q=80" alt="Galaxy Blast Cake with star-sprinkled decoration on a cake stand" loading="lazy" width="700" height="500"></div>
+        <div class="gallery-info"><span class="tag">Birthday</span><h3>Galaxy Blast Cake</h3><p class="gallery-price">From $115</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="bg-yellow">
+  <div class="container text-center reveal">
+    <h2>Don't see exactly what you're imagining?</h2>
+    <p style="max-width:480px; margin:14px auto 26px;">That's kind of our specialty. Tell us your idea and we'll design it from scratch.</p>
+    <a href="order.html" class="btn btn-primary">Start a Custom Order 🎨</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:var(--cream);"><span class="logo-mark">🎂</span> Whisk & Wonder</div>
+        <p style="margin-top:12px; opacity:0.85; max-width:280px;">Custom cakes baked with love in the heart of the city, one celebration at a time.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="order.html">Custom Order</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Occasions</h4>
+        <ul>
+          <li><a href="gallery.html">Birthdays</a></li>
+          <li><a href="gallery.html">Weddings</a></li>
+          <li><a href="gallery.html">Baby Showers</a></li>
+          <li><a href="gallery.html">Anniversaries</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📍 12 Baker Street, Sweetville</li>
+          <li>📞 (555) 010-2026</li>
+          <li>✉️ hello@whiskandwonder.bake</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Whisk & Wonder Custom Cakes. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" aria-label="Close">✕</button>
+    <div class="lightbox-photo"><img class="lightbox-img" src="" alt="" loading="lazy"></div>
+    <h3 class="lightbox-title">Cake Name</h3>
+    <p class="lightbox-desc" style="margin:12px 0; opacity:0.85;">Description</p>
+    <p class="lightbox-price" style="font-family:var(--font-display); color:var(--violet); font-size:1.2rem; margin-bottom:18px;">Price</p>
+    <a href="order.html" class="btn btn-primary btn-block">Order Something Like This</a>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

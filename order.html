@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Order — Whisk & Wonder</title>
+<meta name="description" content="Design your custom cake in a few simple steps — choose flavor, size, occasion, and delivery date.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark">🎂</span> Whisk & Wonder</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="order.html" class="active">Custom Order</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta-mobile"><a href="order.html" class="btn btn-primary btn-block">Order Now</a></li>
+    </ul>
+    <div class="nav-cta"><a href="order.html" class="btn btn-primary">Order Your Cake</a></div>
+  </div>
+</nav>
+
+<header class="page-hero bg-orange" style="color:#fff;">
+  <div class="container reveal">
+    <span class="eyebrow" style="background:#fff; color:var(--choc);">Let's design it together</span>
+    <h1>Build your dream cake in 4 easy steps</h1>
+    <p style="opacity:0.95;">Fill out the details below and we'll follow up within 24 hours with a quote and design sketch.</p>
+  </div>
+  <svg class="frosting-divider" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,40 C120,80 240,0 360,40 C480,80 600,0 720,40 C840,80 960,0 1080,40 C1200,80 1320,0 1440,40 L1440,80 L0,80 Z" fill="#FFF8EE"></path>
+  </svg>
+</header>
+
+<section style="padding-top:40px;">
+  <div class="container">
+
+    <div class="stepper reveal">
+      <div class="step-pill"><span class="num">1</span> Occasion</div>
+      <span class="step-arrow">→</span>
+      <div class="step-pill"><span class="num">2</span> Flavor & Size</div>
+      <span class="step-arrow">→</span>
+      <div class="step-pill"><span class="num">3</span> Design</div>
+      <span class="step-arrow">→</span>
+      <div class="step-pill"><span class="num">4</span> Delivery</div>
+    </div>
+
+    <form id="order-form" class="order-form reveal">
+
+      <h3 style="margin-bottom:18px;">1 · Tell us about the occasion</h3>
+      <div class="form-row">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" required placeholder="Jordan Lee">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="jordan@email.com">
+        </div>
+      </div>
+      <div class="field">
+        <label for="occasion">Occasion</label>
+        <select id="occasion" required>
+          <option value="">Select an occasion</option>
+          <option>Birthday</option>
+          <option>Wedding</option>
+          <option>Baby Shower</option>
+          <option>Anniversary</option>
+          <option>Just Because</option>
+        </select>
+      </div>
+
+      <h3 style="margin:30px 0 18px;">2 · Pick your flavor & size</h3>
+      <div class="field">
+        <label>Cake flavor</label>
+        <div class="chip-group" data-multi="false">
+          <label class="chip"><input type="radio" name="flavor" value="Vanilla Bean">Vanilla Bean</label>
+          <label class="chip"><input type="radio" name="flavor" value="Dark Chocolate">Dark Chocolate</label>
+          <label class="chip"><input type="radio" name="flavor" value="Red Velvet">Red Velvet</label>
+          <label class="chip"><input type="radio" name="flavor" value="Lemon Zest">Lemon Zest</label>
+          <label class="chip"><input type="radio" name="flavor" value="Rainbow Funfetti">Rainbow Funfetti</label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="size">Size (servings)</label>
+        <select id="size" required>
+          <option value="">Select a size</option>
+          <option>Small — serves 8-10</option>
+          <option>Medium — serves 15-20</option>
+          <option>Large — serves 30-40</option>
+          <option>Tiered — serves 50+</option>
+        </select>
+      </div>
+
+      <h3 style="margin:30px 0 18px;">3 · Describe the design</h3>
+      <div class="field">
+        <label for="theme">Design idea, colors, or theme</label>
+        <textarea id="theme" rows="4" placeholder="E.g. pastel florals with gold accents, or a dinosaur jungle scene..."></textarea>
+      </div>
+      <div class="field">
+        <label for="inspo">Inspiration image link (optional)</label>
+        <input type="url" id="inspo" placeholder="Paste a Pinterest/Instagram link">
+      </div>
+
+      <h3 style="margin:30px 0 18px;">4 · Delivery details</h3>
+      <div class="form-row">
+        <div class="field">
+          <label for="date">Date needed</label>
+          <input type="date" id="date" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" required placeholder="(555) 010-2026">
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block" style="margin-top:10px;">🎂 Submit My Cake Request</button>
+      <p style="text-align:center; margin-top:14px; font-size:0.9rem; opacity:0.75;">A $25 design deposit is required to confirm — we'll send a secure link after reviewing your request.</p>
+    </form>
+
+    <div id="order-success" class="order-form form-success reveal">
+      <div class="big-emoji">🎉</div>
+      <h2>Request received!</h2>
+      <p style="margin:14px 0; opacity:0.85;">Thank you — our design team will email you a sketch and quote within 24 hours.</p>
+      <a href="gallery.html" class="btn btn-secondary">Browse more inspiration</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:var(--cream);"><span class="logo-mark">🎂</span> Whisk & Wonder</div>
+        <p style="margin-top:12px; opacity:0.85; max-width:280px;">Custom cakes baked with love in the heart of the city, one celebration at a time.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="order.html">Custom Order</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Occasions</h4>
+        <ul>
+          <li><a href="gallery.html">Birthdays</a></li>
+          <li><a href="gallery.html">Weddings</a></li>
+          <li><a href="gallery.html">Baby Showers</a></li>
+          <li><a href="gallery.html">Anniversaries</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📍 12 Baker Street, Sweetville</li>
+          <li>📞 (555) 010-2026</li>
+          <li>✉️ hello@whiskandwonder.bake</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Whisk & Wonder Custom Cakes. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

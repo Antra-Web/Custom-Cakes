@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Booking — Whisk & Wonder</title>
+<meta name="description" content="Get in touch with Whisk & Wonder — questions, custom quotes, and cake pickup or delivery info.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark">🎂</span> Whisk & Wonder</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="order.html">Custom Order</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li class="nav-cta-mobile"><a href="order.html" class="btn btn-primary btn-block">Order Now</a></li>
+    </ul>
+    <div class="nav-cta"><a href="order.html" class="btn btn-primary">Order Your Cake</a></div>
+  </div>
+</nav>
+
+<header class="page-hero bg-teal" style="color:#fff;">
+  <div class="container reveal">
+    <span class="eyebrow" style="background:#fff; color:var(--choc);">We'd love to hear from you</span>
+    <h1>Questions, quotes, or just say hi</h1>
+    <p style="opacity:0.95;">Reach out and we'll get back to you within one business day.</p>
+  </div>
+  <svg class="frosting-divider" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,40 C120,80 240,0 360,40 C480,80 600,0 720,40 C840,80 960,0 1080,40 C1200,80 1320,0 1440,40 L1440,80 L0,80 Z" fill="#FFF8EE"></path>
+  </svg>
+</header>
+
+<section style="padding-top:40px;">
+  <div class="container contact-grid">
+
+    <div class="reveal">
+      <div class="info-card">
+        <div class="icon-badge bg-yellow">📍</div>
+        <div><h3>Visit the studio</h3><p>12 Baker Street, Sweetville, ST 45678</p></div>
+      </div>
+      <div class="info-card">
+        <div class="icon-badge bg-orange">📞</div>
+        <div><h3>Call or text</h3><p>(555) 010-2026</p></div>
+      </div>
+      <div class="info-card">
+        <div class="icon-badge bg-violet">✉️</div>
+        <div><h3>Email</h3><p>hello@whiskandwonder.bake</p></div>
+      </div>
+      <div class="info-card">
+        <div class="icon-badge bg-teal">🕑</div>
+        <div><h3>Hours</h3><p>Tue–Sat: 9am–6pm · Sun–Mon: Closed</p></div>
+      </div>
+      <div class="map-box">🗺️ 12 Baker Street, Sweetville — 5 min from Central Park Plaza</div>
+    </div>
+
+    <div class="reveal delay-1">
+      <form id="contact-form" class="order-form" style="padding:32px;">
+        <h3 style="margin-bottom:18px;">Send us a message</h3>
+        <div class="field">
+          <label for="c-name">Name</label>
+          <input type="text" id="c-name" required placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="c-email">Email</label>
+          <input type="email" id="c-email" required placeholder="you@email.com">
+        </div>
+        <div class="field">
+          <label for="c-subject">What's this about?</label>
+          <select id="c-subject" required>
+            <option value="">Select one</option>
+            <option>General question</option>
+            <option>Custom quote</option>
+            <option>Order status</option>
+            <option>Feedback</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" rows="5" required placeholder="Tell us what's on your mind..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">💌 Send Message</button>
+      </form>
+
+      <div id="contact-success" class="order-form form-success" style="padding:32px;">
+        <div class="big-emoji">💌</div>
+        <h2>Message sent!</h2>
+        <p style="margin:14px 0; opacity:0.85;">Thanks for reaching out — we'll reply within one business day.</p>
+        <a href="index.html" class="btn btn-secondary">Back to Home</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-mint">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Good to know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div style="max-width:700px; margin:0 auto;">
+      <div class="faq-item reveal">
+        <button class="faq-question">How far in advance should I order? <span class="plus">+</span></button>
+        <div class="faq-answer"><p>We recommend at least 2 weeks for standard cakes and 6-8 weeks for wedding cakes or large tiered designs.</p></div>
+      </div>
+      <div class="faq-item reveal delay-1">
+        <button class="faq-question">Do you accommodate allergies or dietary needs? <span class="plus">+</span></button>
+        <div class="faq-answer"><p>Yes! We offer gluten-free, egg-free, and nut-free options — just let us know in your order form.</p></div>
+      </div>
+      <div class="faq-item reveal delay-2">
+        <button class="faq-question">Do you deliver? <span class="plus">+</span></button>
+        <div class="faq-answer"><p>We deliver within 15 miles of Sweetville. Pickup at our studio is always free.</p></div>
+      </div>
+      <div class="faq-item reveal delay-3">
+        <button class="faq-question">What's the deposit policy? <span class="plus">+</span></button>
+        <div class="faq-answer"><p>A $25 design deposit confirms your slot, deducted from your final invoice. Remaining balance is due at pickup or delivery.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:var(--cream);"><span class="logo-mark">🎂</span> Whisk & Wonder</div>
+        <p style="margin-top:12px; opacity:0.85; max-width:280px;">Custom cakes baked with love in the heart of the city, one celebration at a time.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="order.html">Custom Order</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Occasions</h4>
+        <ul>
+          <li><a href="gallery.html">Birthdays</a></li>
+          <li><a href="gallery.html">Weddings</a></li>
+          <li><a href="gallery.html">Baby Showers</a></li>
+          <li><a href="gallery.html">Anniversaries</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📍 12 Baker Street, Sweetville</li>
+          <li>📞 (555) 010-2026</li>
+          <li>✉️ hello@whiskandwonder.bake</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Whisk & Wonder Custom Cakes. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
